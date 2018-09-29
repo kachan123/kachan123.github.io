@@ -1,0 +1,72 @@
+body{
+	background: 
+}
+
+#scene {
+ /*width and height of box set in javascript file to be responsive*/
+ /*centering the scene on the window*/
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*perspective: 1600px;*/
+  
+}
+
+#cube {
+  position: relative;
+  /*width and height set in js file to be responsive*/
+  transform-style: preserve-3d;
+  transform: translateZ(-400px) rotateX(0deg);
+  animation: example 40s linear infinite;
+}
+
+.side {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 120px 0;
+/*   padding-top:50%; */
+  box-sizing: border-box;
+  background-color:rgba(255, 182, 193, 0.50);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  font: 50px 'ROBOTO', sans-serif;
+  color: #fff;  
+
+
+  border: 1px solid white !important;
+/*  text-transform: uppercase;*/
+  text-align: center;
+}
+
+.side span {
+  position: relative;
+  
+}
+
+.back {
+ /*transform: translateZ(-200px) rotateX(180deg);*/
+}
+.top {
+  /*transform: translateY(-200px) rotateX(90deg);*/
+}
+.bottom {
+  /*transform: translateY(200px) rotateX(270deg);*/
+}
+.front {
+  /*transform: translateZ(200px);*/
+}
+
+@keyframes example {
+  0% { transform: translateZ(-450px) rotateX(0deg); }
+  15% { transform: translateZ(-450px) rotateX(90deg); }
+  25% { transform: translateZ(-450px) rotateX(90deg); }
+  40% { transform: translateZ(-450px) rotateX(180deg); }
+  50% { transform: translateZ(-450px) rotateX(180deg); }
+  65% { transform: translateZ(-450px) rotateX(270deg); }
+  75% { transform: translateZ(-450px) rotateX(270deg); }
+  90% { transform: translateZ(-450px) rotateX(360deg); }
+  100% { transform: translateZ(-450px) rotateX(360deg); }
+}
