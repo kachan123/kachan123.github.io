@@ -1,0 +1,33 @@
+
+
+body {
+	background: url(http://images.unsplash.com/photo-1415369629372-26f2fe60c467?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=b8fe85e97c4f2507ac10dab3e58fa637);
+	background-size: cover; 
+	background-position: center;
+	font-family: Lato;
+	color: white;
+	/*remember that the body is a general selector, the buttons etc. won't change
+	because they are overridden by more specific selectors*/
+}
+
+#content {
+	text-align: center;
+	padding-top: 25%;
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+				 0px 8px 13px rgba(0, 0, 0, 0.1),
+				 0px 18px 23px rgba(0, 0, 0, 0.1);
+				 /*offsetx offsety blurradius and color*/
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 5em;
+}
+
+hr {
+	width: 400px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+
