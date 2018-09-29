@@ -168,7 +168,7 @@ document.getElementById("scene").style.perspective =  w*3 + "px";
 // centering splash logo and intro
 var center = function() {
 	cubeSetup();
-} 
+}  
 
 if ( document.readyState === "complete" || ( document.readyState !== "loading" && !document.documentElement.doScroll )) {
 	center();
