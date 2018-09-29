@@ -1,10 +1,13 @@
+body{
+	background: 
+}
+
 #scene {
- /*width and height set in javascript file to be responsive*/
- /* top | right | bottom | left */
+ /*width and height of box set in javascript file to be responsive*/
+ /*centering the scene on the window*/
   position: fixed;
   top: 50%;
   left: 50%;
-  /* bring your own prefixes */
   transform: translate(-50%, -50%);
   /*perspective: 1600px;*/
   
