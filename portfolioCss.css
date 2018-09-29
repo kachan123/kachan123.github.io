@@ -1,20 +1,20 @@
 #scene {
-  width: 400px;
-  height: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  perspective: 1600px;
+ /*width and height set in javascript file to be responsive*/
+ /* top | right | bottom | left */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  /*perspective: 1600px;*/
   
 }
 
 #cube {
   position: relative;
-  width: 100%;
-  height: 100%;
+  /*width and height set in js file to be responsive*/
   transform-style: preserve-3d;
-  transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,-150,1);
+  transform: translateZ(-400px) rotateX(0deg);
   animation: example 40s linear infinite;
 }
 
@@ -22,14 +22,19 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  padding-top:50%;
+  padding: 120px 0;
+/*   padding-top:50%; */
   box-sizing: border-box;
   background-color:rgba(255, 182, 193, 0.50);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+
   font: 50px 'ROBOTO', sans-serif;
   color: #fff;
-  text-transform: uppercase;
+
+
+  border: 1px solid white !important;
+/*  text-transform: uppercase;*/
   text-align: center;
 }
 
@@ -40,31 +45,25 @@
 
 .back {
  /*transform: translateZ(-200px) rotateX(180deg);*/
- transform: matrix3d(
-    1,0,0,0,
-    0,-1,0,0,
-    0,0,-1,0,
-    0,0,-200,1
-  );
 }
 .top {
-  transform: translateY(-200px) rotateX(90deg);
+  /*transform: translateY(-200px) rotateX(90deg);*/
 }
 .bottom {
-  transform: translateY(200px) rotateX(270deg);
+  /*transform: translateY(200px) rotateX(270deg);*/
 }
 .front {
-  transform: translateZ(200px);
+  /*transform: translateZ(200px);*/
 }
 
 @keyframes example {
-  0% { transform: translateZ(-200px) rotateX(0deg); }
-  15% { transform: translateZ(-200px) rotateX(90deg); }
-  25% { transform: translateZ(-200px) rotateX(90deg); }
-  40% { transform: translateZ(-200px) rotateX(180deg); }
-  50% { transform: translateZ(-200px) rotateX(180deg); }
-  65% { transform: translateZ(-200px) rotateX(270deg); }
-  75% { transform: translateZ(-200px) rotateX(270deg); }
-  90% { transform: translateZ(-200px) rotateX(360deg); }
-  100% { transform: translateZ(-200px) rotateX(360deg); }
+  0% { transform: translateZ(-450px) rotateX(0deg); }
+  15% { transform: translateZ(-450px) rotateX(90deg); }
+  25% { transform: translateZ(-450px) rotateX(90deg); }
+  40% { transform: translateZ(-450px) rotateX(180deg); }
+  50% { transform: translateZ(-450px) rotateX(180deg); }
+  65% { transform: translateZ(-450px) rotateX(270deg); }
+  75% { transform: translateZ(-450px) rotateX(270deg); }
+  90% { transform: translateZ(-450px) rotateX(360deg); }
+  100% { transform: translateZ(-450px) rotateX(360deg); }
 }

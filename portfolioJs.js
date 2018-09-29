@@ -82,8 +82,8 @@ function matrixArrayToCssMatrix(array) {
 
 // initialize cube
 var cubeSetup = function() {
-	var w = window.innerWidth;
-	var h = window.innerHeight;
+	var w = (window.innerHeight)*.80;
+	var h = (window.innerHeight)*.80;
 
 	// var w = 1200;
 	// var h = 600;
@@ -95,7 +95,7 @@ var cubeSetup = function() {
 	document.getElementById("scene").style.height = h + "px";
 
 	// set perspective = 4w
-document.getElementById("scene").style.perspective =  w*4 + "px";
+document.getElementById("scene").style.perspective =  w*3 + "px";
 
 	// set the sizes of the cube 
 	document.getElementById("cube").style.height = h + "px";
