@@ -14,7 +14,7 @@
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  transform: translateZ(-400px) rotateX(0deg);
+  transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,-150,1);
   animation: example 40s linear infinite;
 }
 
@@ -39,7 +39,13 @@
 }
 
 .back {
- transform: translateZ(-200px) rotateX(180deg);
+ /*transform: translateZ(-200px) rotateX(180deg);*/
+ transform: matrix3d(
+    1,0,0,0,
+    0,-1,0,0,
+    0,0,-1,0,
+    0,0,-200,1
+  );
 }
 .top {
   transform: translateY(-200px) rotateX(90deg);
