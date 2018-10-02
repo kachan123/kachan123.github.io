@@ -95,7 +95,7 @@ var cubeSetup = function() {
 	document.getElementById("scene").style.height = h + "px";
 
 	// set perspective = 4w
-document.getElementById("scene").style.perspective =  w*3 + "px";
+document.getElementById("scene").style.perspective =  w*4 + "px";
 
 	// set the sizes of the cube 
 	document.getElementById("cube").style.height = h + "px";
@@ -168,7 +168,7 @@ document.getElementById("scene").style.perspective =  w*3 + "px";
 // centering splash logo and intro
 var center = function() {
 	cubeSetup();
-}  
+}
 
 if ( document.readyState === "complete" || ( document.readyState !== "loading" && !document.documentElement.doScroll )) {
 	center();

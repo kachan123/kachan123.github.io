@@ -1,5 +1,6 @@
+
 body{
-	background: 
+  background: 
 }
 
 #scene {
@@ -18,7 +19,56 @@ body{
   /*width and height set in js file to be responsive*/
   transform-style: preserve-3d;
   transform: translateZ(-400px) rotateX(0deg);
+    -webkit-transition: -webkit-transform 1s linear;
+    -webkit-transform-style: preserve-3d;
   animation: example 40s linear infinite;
+}
+
+/* 
+ * TO DO: fix this hard code hack
+ * rotating faces via animations
+ */
+
+/* FORWARDS ANIMATIONS */
+.rotate-0-90 {
+  animation: rotate-0-90 1s linear forwards;
+}
+
+.rotate-90-180 {
+  animation: rotate-90-180 1s linear forwards;
+}
+
+.rotate-180-270 {
+  animation: rotate-180-270 1s linear forwards;
+}
+
+.rotate-270-0 {
+  animation: rotate-270-360 1s linear forwards;
+}
+
+
+/* BACKWARDS ANIMATIONS */
+.rotate-90-0 {
+  animation: rotate-90-0 1s linear forwards;
+}
+
+.rotate-180-90 {
+  animation: rotate-180-90 1s linear forwards;
+}
+
+.rotate-270-180 {
+  animation: rotate-270-180 1s linear forwards;
+}
+
+.rotate-0-270 {
+  animation: rotate-360-270 1s linear forwards;
+}
+
+.paused{
+  -webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -o-animation-play-state:paused; 
+  animation-play-state:paused;
 }
 
 .side {
@@ -69,4 +119,4 @@ body{
   75% { transform: translateZ(-450px) rotateX(270deg); }
   90% { transform: translateZ(-450px) rotateX(360deg); }
   100% { transform: translateZ(-450px) rotateX(360deg); }
-}
+}*/
