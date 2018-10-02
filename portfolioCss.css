@@ -48,7 +48,11 @@ body{
 
 .back {
 <<<<<<< HEAD
+<<<<<<< HEAD
  /*transform: translateZ(-200px) rotateX(180deg);*/
+=======
+ transform: translateZ(-200px) rotateX(180deg);
+>>>>>>> parent of 222c268... like actually linking the js file??
 =======
  transform: translateZ(-200px) rotateX(180deg);
 >>>>>>> parent of 222c268... like actually linking the js file??
