@@ -3,6 +3,17 @@ body{
   background: 
 }
 
+li{
+  font: 20px 'Montserrat', sans-serif;
+}
+
+img
+{
+  max-width: 50%; 
+  height: auto;
+  width: auto/9;
+
+}
 #scene {
  /*width and height of box set in javascript file to be responsive*/
  /*centering the scene on the window*/
@@ -75,14 +86,14 @@ body{
   position: absolute;
   width: 100%;
   height: 100%;
-  padding: 120px 0;
+  padding: 50px 0;
 /*   padding-top:50%; */
   box-sizing: border-box;
   background-color:rgba(255, 182, 193, 0.50);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
-  font: 50px 'ROBOTO', sans-serif;
+  font: 50px 'Montserrat', sans-serif;
   color: #fff;  
 
 
