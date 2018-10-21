@@ -1,19 +1,29 @@
 
-body{
-  background: 
-}
 
 li{
-  font: 20px 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5vw;
 }
 
+.smallerList{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1vw;
+}
 img
 {
-  max-width: 50%; 
+  max-width: 30%; 
   height: auto;
   width: auto/9;
 
 }
+
+span
+{
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 4vw;
+}
+
+
 #scene {
  /*width and height of box set in javascript file to be responsive*/
  /*centering the scene on the window*/
@@ -32,8 +42,9 @@ img
   transform: translateZ(-400px) rotateX(0deg);
     -webkit-transition: -webkit-transform 1s linear;
     -webkit-transform-style: preserve-3d;
-  animation: example 40s linear infinite;
+  animation: example 60s linear infinite;
 }
+
 
 /* 
  * TO DO: fix this hard code hack
@@ -89,11 +100,11 @@ img
   padding: 50px 0;
 /*   padding-top:50%; */
   box-sizing: border-box;
-  background-color:rgba(255, 182, 193, 0.50);
+  background-color:rgba(255, 182, 193, 0.90);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
-  font: 50px 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #fff;  
 
 
@@ -105,6 +116,16 @@ img
 .side span {
   position: relative;
   
+}
+
+.subHeaders {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 2vw;
+}
+
+.subSubHeaders {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 1.5vw;
 }
 
 .back {

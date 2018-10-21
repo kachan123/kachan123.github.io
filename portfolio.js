@@ -1,3 +1,9 @@
+//document.body.style.backgroundColor = "black";
+document.body.style.backgroundImage = "url('cyber-1481752.png')";
+document.body.style.backgroundSize = "cover";
+
+
+
 // matrix stuff
 // from https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Matrix_math_for_the_web
 function multiplyMatrixAndPoint(matrix, point) {
